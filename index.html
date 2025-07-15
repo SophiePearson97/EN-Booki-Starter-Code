@@ -16,11 +16,85 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+  <header>
+    <div class="logo">
+      <img src="./images/logo/Booki.png" alt="Booki Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accommodations">Accommodations</a></li>
+        <li><a href="#activities">Things to Do</a></li>
+      </ul>
+    </nav>
+  </header>
         <main>
+             <section class="hero">
+    <h1>Find a place for your dream vacation</h1>
+    <p>Downtown or in nature</p>
+
+    <form class="search-form">
+      <label for="location">Where would you like to go?</label>
+      <input type="text" id="location" name="location" placeholder="Enter a destination">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  <br>
+
+  <section class="filters">
+  <h2 class="visually-hidden">Search Filters</h2>
+
+  <form class="filter-form">
+
+    <div class="filter-group">
+     <i class="fa-solid fa-location-dot"></i>
+      <input 
+        type="text" 
+        id="location" 
+        name="location" 
+        placeholder="Marseille, France..."
+      ><button type="Search" class="search-button">Search</button>
+    </div>
+
+    <div class="filter-group">
+       <i class="fa-solid fa-money-bill-1-wave"></i>
+      <span>Budget</span>
+      <div class="budget-buttons">
+        <button type="button" class="budget-option">€</button>
+        <button type="button" class="budget-option">€€</button>
+        <button type="button" class="budget-option">€€€</button>
+      </div>
+    </div>
+
+    <button type="submit" class="search-submit">Search</button>
+  </form>
+</section>
+
             <div class="accommodation-and-popular">
                 <section class="accommodation">
+<h2 class="section-title">Accommodations in Marseille</h2>
+<i class="fa-solid fa-info"></i>
+<p>There are over 500 available places to stay in this city</p>
 
+    <div class="accommodation-list">
+        <a href="#" class="card-link">
+      <article class="card">
+        <img src="images/accommodation/emile-guillemot.jpg" alt="Image of hotel room showing bed">
+        <div class="card-content">
+        <div class="card-txt">
+        <h3 class="class-title">La Canebiere Inn</h3>
+        <p class="card-subtitle">From <span class="euro">€</span>25 per night</p>
+        </div>
+        <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Rated 4 out of 5</span>
+                                </div>
+                            </div>
+      </article>
+      </a>
                 </section>
                 <section class="popular">
                     <div class="popular-title">
@@ -28,6 +102,7 @@
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="popular-cards">
+                        <a href="#" class="card-link">
                         <article class="card">
                             <img src="./images/accommodation/emile-guillemot.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
@@ -44,8 +119,10 @@
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
+                        </a>
                         </article>
                         <article class="card">
+                            <a href="#" class="card-link">
                             <img src="./images/accommodation/aw-creative.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -63,6 +140,7 @@
                             </div>
                         </article>
                         <article class="card">
+                            <a href="#" class="card-link">
                             <img src="./images/accommodation/febrian-zakaria2.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -77,13 +155,48 @@
                                     <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
+                            </a>
+                            </article>
+                        </section>
+                                <section id="activities">
+    <h2 class="section-title">Activities in Marseille</h2>
+    <div class="activities-list">
+        <article class="card">
+                            <a href="#" class="card-link">
+                            <img src="images/activites/The Old Port.png" alt="Image of the old port">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">The Old Port</h3>
+                                </a>
+             </article>
+    </div>
         </main>
-        <footer></footer>
+        
+        <footer>
+            <div>
+      <h3>About</h3>
+      <ul>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Investors</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Our Community</h3>
+      <ul>
+        <li><a href="#">Diversity</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Help</h3>
+      <ul>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Cancellation options</a></li>
+        <li><a href="#">Safety information</a></li>
+      </ul>
+    </div></footer>
     </div>
 </body>
 
