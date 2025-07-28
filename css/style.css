@@ -104,11 +104,16 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
-.budget-option .fa-solid {
+.budget-option i.fa-solid {
   color: #0065FC !important;
+}
+
+.budget-option i svg {
+  color: #0065FC !important;
+  fill: #0065FC !important;
 }
 
 .budget-option:hover {
