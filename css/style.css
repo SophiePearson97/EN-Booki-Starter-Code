@@ -1,6 +1,9 @@
-/****** General ***********/
+/* General */
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -9,15 +12,114 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
-    color: var(--main-color);
-}
-
 body {
-    display: flex;
-    justify-content: center;
+    margin: 40px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 61.09px;
+    height: auto; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Search and Filter */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 20px 0;
+}
+
+.search-form input[type="text"] {
+  border: none;
+  padding: 15px;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  width: 250px;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+}
+
+.search-form button {
+  background-color: #0065FC;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #004bb5;
+}
+
+.search-icon {
+  background-color: #D9D9D9;
+  padding: 10px;
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Filters */
+.filters {
+  margin-top: 20px;
+}
+
+.filters h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Filter buttons */
+.budget-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.budget-option .fa-solid {
+  color: #0065FC !important;
+}
+
+.budget-option:hover {
+  background-color: #DEEBFF;
+  border-color: #0065FC;
+  color: #0065FC;
+}
+
+
+
+/* Page body */
 .main-container {
     width: 100%;
     padding: 0 50px;
@@ -52,7 +154,7 @@ body {
     color: var(--main-bg-color)
 }
 
-/****** Accommodation And Popular ***********/
+/* Accommodation And Popular */
 .accommodation-and-popular {
     display: flex;
     justify-content: space-between;
@@ -65,12 +167,12 @@ body {
     box-sizing: border-box;
 }
 
-/****** Accommodation ***********/
+/* Accommodation */
 .accommodation {
     width: 65%;
 }
 
-/****** Popular ***********/
+/* Popular */
 .popular {
     width: 32%;
 }
