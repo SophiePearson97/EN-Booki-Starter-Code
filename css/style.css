@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+.page-container {
+  max-width: 1440px;
+  min-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -31,10 +39,21 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 20px;   
 }
 
-/* Search and Filter */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    text-decoration: overline;
+    color: #0065FC;
+}
+
+/* Search */
 .search-form {
   display: flex;
   align-items: center;
@@ -68,7 +87,7 @@ body {
 
 .search-icon {
   background-color: #D9D9D9;
-  padding: 15px;
+  padding: 16px;
   border-radius: 25px 0 0 25px;
   display: flex;
   align-items: center;
@@ -77,12 +96,12 @@ body {
 
 /* Filters */
 .filters {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .filters h4 {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .filter-buttons {
@@ -92,6 +111,17 @@ body {
 }
 
 /* Filter buttons */
+.filter-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.filter-title h4 {
+  margin: 0;
+  align-items: center;
+}
 .budget-option {
   display: flex;
   align-items: center;
@@ -122,13 +152,13 @@ body {
 
 .budget-option:hover {
   background-color: #DEEBFF;
-  border-color: #0065FC;
+  border-color: #D9D9D9;
   color: #0065FC;
 }
 
 .filter-info {
     display: flex;
-    align-items: left;
+    align-items: center;
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -204,11 +234,21 @@ body {
     margin: 0px 0 30px 0;
 }
 
+.accommodation-title {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.accommodation-title h2 {
+    margin: 0;
+}
+
 .accommodation-card {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    height: 207px;
+    width: 30%;
+    height: auto;
     background-color: white;
     margin: 10px;
     border-radius: 20px;
@@ -275,6 +315,7 @@ body {
     padding: 30px;
     gap: 30px;
     margin: 0px 0 30px 0;
+    flex-wrap: wrap;
 }
 
 .popular-title {
@@ -286,10 +327,11 @@ body {
 .popular-cards .card {
     display: flex;
     margin-top: 33px;
-    height: 150px;
+    height: auto;
     width: 100%;
     box-shadow: 4px 4px 8px #00000033; 
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -383,4 +425,32 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     align-content: center;
+}
+
+/* Footer */
+.footer {
+    background-color:#D9D9D9;
+    padding: 10px 30px 30px 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-content h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 200px;
+    text-size-adjust: 16px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: black;
 }
