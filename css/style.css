@@ -45,6 +45,8 @@ body {
 .nav-links a {
     text-decoration: none;
     color: black;
+    padding: 10px 15px;
+    gap: 10px;
 }
 
 .nav-links a:hover,
@@ -381,8 +383,7 @@ body {
 /* Things to do */
 .activities {
     width: 100%;
-    padding: 30px;
-    gap: 30px;
+
 }
 
 .activities-list {
