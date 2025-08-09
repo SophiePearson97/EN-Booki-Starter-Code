@@ -21,8 +21,8 @@
       <img src="./images/logo/Booki.png" alt="Booki Logo">
     </div>
         <nav class="nav-links">
-<a href="#">Accommodations</a> 
-<a href="#">Things to Do</a>
+<div><a href="#">Accommodations</a></div>
+<div><a href="#">Things to Do</a></div>
         </nav>  
         </div>
   </header>
@@ -33,13 +33,20 @@
     <h1>Find a place to stay for your dream vacation</h1>
     <p>In the heart of the city or surrounded by nature</p>
 
-    <form class="search-form">
+   <form class="search-form">
   <div class="search-icon">
     <i class="fa-solid fa-location-dot"></i>
   </div>
   <label for="location"></label>
   <input type="text" id="location" name="location" placeholder="Marseille, France...">
-  <button type="submit">Search</button>
+
+  <!-- Button for large screens -->
+  <button type="submit" class="search-btn-text">Search</button>
+
+  <!-- Button for small screens -->
+  <button type="submit" class="search-btn-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
 </form>
 
   </section>
@@ -89,11 +96,9 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
+                            </div>
                             </div>
                         </a>
         </article>
@@ -112,9 +117,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
@@ -134,9 +137,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
@@ -156,9 +157,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                   <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
@@ -178,12 +177,10 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
                             </div>
+        </div>
             </a>
         </article>
 
@@ -200,14 +197,13 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
                             </div>
+        </div>
             </a>
         </article>
+        <div><a href="#" class="show-more">Show more</a></div>
         </div>
     </section>
 
@@ -231,11 +227,9 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
+                            </div>
                             </div>
                         </a>
                         </article>
@@ -252,11 +246,9 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
+                            </div>
                             </div>
                             </a>
                         </article>
@@ -273,9 +265,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    </div>
-                                <div class="card-missing-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star card-missing-rating" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>

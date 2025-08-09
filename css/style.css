@@ -1,3 +1,235 @@
+/* Search Icon */
+.search-btn-icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .search-btn-text {
+    display: none;
+  }
+
+  .search-btn-icon {
+    display: inline-block;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .search-btn-icon:hover {
+    background-color: #004bb5;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .page-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+}
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+ .accommodation-and-popular {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+.accommodation {
+    width: 100%;
+    justify-content: center;
+  }
+
+.popular {
+     width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }
+
+    .activities {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    }
+
+.popular-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 30px;
+    }
+
+  .activities-list {
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;;
+  }
+
+  .activities-card {
+    width: 100%;
+    height: auto;
+  }
+  
+  .activities-card {
+    display: flex;
+    margin-top: 33px;
+    height: 270px !important;
+    width: 193.5px !important;
+    box-shadow: 4px 4px 8px #00000033;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.activities-card img {
+    width: 193.5px !important;
+    height: 200px !important;
+    border-radius: 20px 20px 0 0 !important;
+    object-fit: cover !important;
+    box-sizing: border-box !important;
+}
+    
+.activities-card .card-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: left;
+    text-wrap: nowrap;
+    font-size: 15px;
+
+}
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 767px) {
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+.page-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+ .accommodation-and-popular {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+.header {
+    order: 1;
+}
+.accommodation {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+
+.popular {
+     width: 100%;
+    height: auto;
+    margin-top: 20px;
+    order: 2;
+    }
+
+.activities {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    order: 4;
+    }
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 121px !important;
+    height: auto; 
+}
+
+.nav-links div {
+    width: 100%;
+    display: flex;
+    gap: 20px; 
+    font-size: 17px;  
+    text-wrap: nowrap;
+}
+
+.nav-links div:hover,
+.nav-links div:focus {
+    color: #0065FC;
+    border-bottom:#0065FC 2px solid !important;
+    border-top: none !important;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 22px;        
+}
+
+.popular-cards .card {
+    height: auto;
+    width: 100%;
+
+}
+
+
+.popular-cards img {
+    width: auto;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.popular-cards .card-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+}
+
+.popular-cards .card-subtitle {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.activities-card {
+    height: 200px !important;
+    width: 315px !important;
+   
+}
+
+.activities-card img {
+    width: 315px !important;
+    height: 141px !important;
+
+}
+
+}
+
 /* General */
 * {
     font-family: 'Raleway', sans-serif;
@@ -8,41 +240,9 @@
 
 .page-container {
   max-width: 1440px;
-  min-width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box;
-}
-
-@media all and (min-width: 1024px) and (max-width: 1440px) {
-
-  /* Accommodation Cards */
-  .accommodation-card img {
-    display: block;
-    width: 250px;
-    height: 124px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-  }
-
-  /* Popular Cards */
-  .popular .card img {
-    display: block;
-    width: 123px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-  }
-
-  /* Activities Cards */
-  .activities-card img {
-    display: block;
-    width: 297.5px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-  }
-
 }
 
 :root {
@@ -52,7 +252,7 @@
 }
 
 body {
-    margin: 40px;
+    margin: 20px;
     font-size: 17px;
 }
 
@@ -80,9 +280,17 @@ body {
     gap: 10px;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    text-decoration: overline;
+.nav-links div {
+    padding: 20px 0;
+}
+
+.nav-links div:hover,
+.nav-links div:focus {
+    color: #0065FC;
+    border-top:#0065FC 2px solid;
+}
+
+.nav-links a:hover {
     color: #0065FC;
 }
 
@@ -126,6 +334,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 
 /* Filters */
 .filters {
@@ -212,9 +421,11 @@ body {
 /* Page body */
 .main-container {
     width: 100%;
-    padding: 0 50px;
     box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5px;
 }
+
 
 .section-title {
     margin: 0;
@@ -253,18 +464,20 @@ body {
 .accommodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 /* Accommodation */
+@media (min-width: 1024px){
 .accommodation {
-    width: 65%;
+    width: 68%;
     height: auto;
     border-radius: 15px;
-    padding: 30px;
-    gap: 30px;
+    padding: 10px;
+    gap: 10px;
     margin: 0px 0 30px 0;
+}
 }
 
 .accommodation-title {
@@ -280,8 +493,6 @@ body {
 .accommodation-card {
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
-    height: auto;
     background-color: white;
     margin: 10px;
     border-radius: 20px;
@@ -294,7 +505,7 @@ body {
 
 
 .accommodation-card img {
-    width: 225px;
+    width: 250px;
     height: 124px;
     object-fit: cover;
     border-radius: 20px;
@@ -327,15 +538,20 @@ body {
     flex-direction: column;
 }
 
+.card-rating {
+    display: flex;
+}
+
 .card-rating svg {
     color: #0065FC;
   fill: #0065FC;
   height: 20px;
   width: 20px;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.card-missing-rating svg {
+svg.card-missing-rating {
     color: #D9D9D9;
   fill: #D9D9D9;
   height: 20px;
@@ -350,14 +566,26 @@ body {
     margin-top: 5px;
 }
 
+.show-more {
+    display: flex;
+    gap: 20px;  
+    text-decoration: none;
+    color: black; 
+    width: 100%;
+    padding: 10px;
+}
+
+
 /* Popular */
+@media (min-width: 1024px){
 .popular {
-    width: 32%;
+    width: 30%;
     height:auto;
-    padding: 30px;
-    gap: 30px;
-    margin: 0px 0 30px 0;
+    padding: 20px;
+    gap: 20px;
+    margin: 0px 0 20px 0;
     flex-wrap: wrap;
+}
 }
 
 .popular-title {
@@ -370,30 +598,30 @@ body {
     display: flex;
     margin-top: 33px;
     height: auto;
-    width: 100%;
+    width: 260px;
     box-shadow: 4px 4px 8px #00000033; 
     border-radius: 20px;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
 .popular-cards img {
-    width: 33%;
+    width: 100px;
     height: 160px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .popular-cards .card-content {
-    width: 67%;
+    width: 150px;
     padding-left: 15px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    float: right;
     line-height: 1.4em;  
+    float: right;
 }
 
 .popular-cards .card-title {
@@ -403,13 +631,12 @@ body {
 
 .popular-cards .card-subtitle {
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .popular-cards .card-rating {
-    margin-bottom: 5px;
     margin-top: 5px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-content: end;
 }
 
@@ -459,6 +686,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     float: left;
+    align-content: center;
     line-height: 1.4em;  
 }
 
