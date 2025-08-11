@@ -1,3 +1,105 @@
+/* General */
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+body {
+    margin: 20px;
+    font-size: 17px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo img {
+    width: 61.09px;
+    height: auto; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;   
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.nav-links div {
+    padding: 20px 0;
+}
+
+.nav-links div:hover,
+.nav-links div:focus {
+    color: #0065FC;
+    border-top:#0065FC 2px solid;
+}
+
+.nav-links a:hover {
+    color: #0065FC;
+}
+
+/* Page body */
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
 /* Search Icon */
 .search-btn-icon {
   display: none;
@@ -26,7 +128,7 @@
 
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .page-container {
     display: flex;
     flex-direction: row;
@@ -115,17 +217,21 @@
 }
 
 /* Mobile */
-@media (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
-.body {
+body {
     margin: 0;
     padding: 0;
 }
 .page-container {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
   }
 
+.main-container {
+    padding: 0;
+}
  .accommodation-and-popular {
     flex-direction: column;
     gap: 20px;
@@ -139,6 +245,7 @@
     width: 100%;
     justify-content: center;
     order: 3;
+    background-color: white !important;
   }
 
 .popular {
@@ -158,7 +265,7 @@
 .header {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .logo img {
@@ -230,69 +337,6 @@ h1 {
 
 }
 
-/* General */
-* {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.page-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
-body {
-    margin: 20px;
-    font-size: 17px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo img {
-    width: 61.09px;
-    height: auto; 
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;   
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px;
-    gap: 10px;
-}
-
-.nav-links div {
-    padding: 20px 0;
-}
-
-.nav-links div:hover,
-.nav-links div:focus {
-    color: #0065FC;
-    border-top:#0065FC 2px solid;
-}
-
-.nav-links a:hover {
-    color: #0065FC;
-}
 
 /* Search */
 .search-form {
@@ -418,42 +462,6 @@ body {
     background-color: white;
 }
 
-/* Page body */
-.main-container {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 5px;
-}
-
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutralStar {
-    color: var(--main-bg-color)
-}
 
 /* Accommodation And Popular */
 .accommodation-and-popular {
@@ -469,7 +477,7 @@ body {
 }
 
 /* Accommodation */
-@media (min-width: 1024px){
+@media screen and (min-width: 1024px){
 .accommodation {
     width: 68%;
     height: auto;
@@ -577,7 +585,7 @@ svg.card-missing-rating {
 
 
 /* Popular */
-@media (min-width: 1024px){
+@media screen and (min-width: 1024px){
 .popular {
     width: 30%;
     height:auto;
