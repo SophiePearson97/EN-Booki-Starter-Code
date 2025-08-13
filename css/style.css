@@ -127,16 +127,6 @@ body {
 }
 
 
-/* Desktop */
-@media screen and (min-width: 1024px) {
-  .page-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-}
-
 /* Tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-container {
@@ -209,10 +199,18 @@ body {
 .activities-card .card-title {
     margin-top: auto;
     margin-bottom: auto;
-    align-content: left;
+    justify-content: center;
     text-wrap: nowrap;
     font-size: 15px;
+    padding-right: 5px;
+    font-size: 15px !important;
 
+}
+
+.activities-card .card-content {
+    width: 100%;
+    padding-left: 5px !important;
+    padding-bottom: 15px;
 }
 }
 
@@ -232,12 +230,26 @@ body {
 .main-container {
     padding: 0;
 }
+
+.info {
+    width: 100%;
+    padding:0 20px;
+}
+
+.filters {
+    width: 100%;
+     padding:0 20px;
+}
+
  .accommodation-and-popular {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
   }
   
+.accommodation-and-popular section {
+    border-radius: 0 !important;
+}
 .header {
     order: 1;
 }
@@ -260,6 +272,7 @@ body {
     height: auto;
     margin-top: 30px;
     order: 4;
+    padding: 0 20px;
     }
 
 .header {
@@ -581,6 +594,7 @@ svg.card-missing-rating {
     color: black; 
     width: 100%;
     padding: 10px;
+    font-weight: bold;
 }
 
 
@@ -702,6 +716,7 @@ svg.card-missing-rating {
     margin-top: auto;
     margin-bottom: auto;
     align-content: center;
+    font-size: 19px;
 }
 
 /* Footer */
